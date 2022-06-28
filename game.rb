@@ -31,16 +31,11 @@ class Game
       if game_over
         exit
       else
+       @current_player == @player1 ? @current_player = @player2 : @current_player = @player1
+
       puts "New Turn Starting"
       end
-      
-      if @current_player = @player1
-        @current_player = @player2
-      end
 
-      if @current_player = @player2
-        @current_player = @player1
-      end
 
     end
   end
