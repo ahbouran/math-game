@@ -5,6 +5,7 @@ class Turns
   end
   
   def switch_turns
-    
+    player1 = true
+    player1 ? player2 = true : 
   end
 end
