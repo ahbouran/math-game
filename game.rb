@@ -26,18 +26,20 @@ class Game
 
       puts "#{@player1.name}: #{@player1.lives}/3 VS #{@player2.name}: #{@player2.lives}/3"
       
+      
+      
+      if game_over
+        exit
+      else
+      puts "New Turn Starting"
+      end
+      
       if @current_player = @player1
         @current_player = @player2
       end
 
       if @current_player = @player2
         @current_player = @player1
-      end
-      
-      if game_over
-        exit
-      else
-      puts "New Turn Starting"
       end
 
     end
